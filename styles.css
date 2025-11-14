@@ -1,0 +1,101 @@
+/* ===========================
+GLOBAL STYLES AND RESET
+============================*/
+
+body {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-content: center;
+    text-align: center;
+    background-color: white
+
+}
+
+/* ========================
+NAVIGATION BAR (Flexbox)
+========================= */
+
+.nav-container {
+    background:-moz-repeating-linear-gradient(45deg, #4c00ff 0%, #ff0000 100%); 
+    padding: 1rem 2rem; /*Top/Bottom 1rem, Left/Right 2rem */ 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    border-left: 3px solid rgb(0, 0, 0);
+    border-right: 3px solid rgb(0, 0, 0);
+    border-top: 3px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.logo h1{
+    color: red;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a:active {
+    background-color: rgb(0, 0, 255);
+    color: #ffffff;
+    transform: translateY(-3px); 
+}
+
+.content {
+    justify-content: space-around;
+    color: white;
+    background: linear-gradient(135deg, #000000 0%, #ff0000 100%); padding: 1rem 2rem; /*Top/Bottom 1rem, Left/Right 2rem */ 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+    border-radius: 1px;
+}
+
+ul {
+    list-style: none;
+}
+
+.flag {
+    rotate: -90deg;
+}
